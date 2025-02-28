@@ -1,15 +1,20 @@
 # Landing Page Project
 
-Este repositório contém o código fonte de uma aplicação front-end de uma landing page, desenvolvida com o objetivo de estudar o framework Next.js e o pré-processador Sass (.scss).
+Este repositório contém o código fonte de uma aplicação front-end de uma landing page, desenvolvida com o objetivo de estudar o framework Next.js.
 
 ## Descrição
 
-O projeto está sendo desenvolvido com base na [playlist de aulas no YouTube](https://www.youtube.com/playlist?list=PLDcRxzkqEbDzvXYmteTMVBBTEdCEDlkQq). A aplicação ainda está em desenvolvimento e novas funcionalidades e melhorias serão adicionadas conforme o progresso dos estudos.
+O projeto está sendo desenvolvido com base na [playlist de aulas no YouTube](https://www.youtube.com/playlist?list=PLDcRxzkqEbDzvXYmteTMVBBTEdCEDlkQq). A aplicação ainda está em desenvolvimento e novas funcionalidades e melhorias serão adicionadas conforme o progresso dos estudos. Além de Next.js, o projeto também aborda o uso de Sass, Vercel, GitHub, Git, CSS Module, Mixins e muito mais.
 
 ## Tecnologias Utilizadas
 
 - [Next.js](https://nextjs.org/)
 - [Sass (.scss)](https://sass-lang.com/)
+- [Vercel](https://vercel.com/)
+- [GitHub](https://github.com/)
+- [Git](https://git-scm.com/)
+- CSS Module
+- Mixins
 
 ## Como Executar o Projeto
 
