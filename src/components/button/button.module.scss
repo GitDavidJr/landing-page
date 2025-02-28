@@ -1,0 +1,10 @@
+@import "../../style/mixins/colors.scss";
+
+.button{
+    background-color: $green-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
