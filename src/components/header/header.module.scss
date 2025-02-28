@@ -1,0 +1,28 @@
+@import "../../style/mixins/colors.scss";
+
+.container {
+  padding: 3.15vh 9.38vw;
+  width: 100%;
+  background-color: $purple-color;
+  border-bottom: 1px solid $gray-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  font-size: 22px;
+
+  a + a {
+    margin-left: 39px;
+  }
+}
+
+.button{
+    background-color: $green-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
