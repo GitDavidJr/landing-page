@@ -1,6 +1,7 @@
 import { Header } from '@/components/header';
 import "../style/globals.scss";
 import Welcome from '@/components/welcome';
+import Features from '@/components/features';
 
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <div className='styles.container'>
       <Header />
       <Welcome />
+      <Features />
     </div>
   );
 }
