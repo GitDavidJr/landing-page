@@ -8,7 +8,7 @@ const Button =({title, kind}) => {
     }
     
 
-    return <button className={`${Styles.button} ${generationkind(kind)}`} >{title}</button>
+    return <button className={`${Styles.button} ${generationkind()}`} >{title}</button>
 }
 
 export default Button;

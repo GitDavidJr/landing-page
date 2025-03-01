@@ -1,13 +1,29 @@
 @import "../../style/mixins/colors.scss";
+@import "../../style/mixins/padding.scss";
 
-.text{
-    h1{
-        font-weight: bold;
-        font-size: 71px;
-    }
+.container {
+  @include Padding;
+  padding-top: 219px;
+  height: 100vh;
+  background-image: url("/images/fundo.svg");
+  background-repeat: no-repeat;
+  background-size: cover; //rever
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-    p{
-        font-size: 30px;
-        opacity: 0.8;
-    }
+.text {
+  h1 {
+    font-weight: bold;
+    font-size: 71px;
+  }
+
+  p {
+    font-size: 30px;
+    opacity: 0.7;
+  }
+}
+
+.image{
+    text-align: end;
 }
