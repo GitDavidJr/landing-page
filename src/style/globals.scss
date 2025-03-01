@@ -13,14 +13,3 @@ a{
 *{
     box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-    html{
-        color-scheme: dark;
-    }
-
-    body {
-        background-color: #333;
-        color: #fff;
-    } 
-} 
