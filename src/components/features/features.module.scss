@@ -3,6 +3,7 @@
 
 .container {
     @include Padding;
+    padding-bottom: 255px;
     display: flex;
     flex-flow: column;
     align-items: center;

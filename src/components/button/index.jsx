@@ -4,6 +4,7 @@ import Styles from"./button.module.scss";
 const Button =({title, kind}) => {
     const generationkind = () => {
         if(kind === "secondary") {return Styles.secondary}
+        if(kind === "full") {return Styles.full}
         return Styles.primary
     }
     

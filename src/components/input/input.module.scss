@@ -1,0 +1,14 @@
+@use "../../style/mixins/colors.scss" as *;
+
+.input{
+    padding: 22px 17px;
+    background-color: $gray-color4;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    color: $gray-color5;
+    opacity: 0.7;
+
+    
+}

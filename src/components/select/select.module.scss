@@ -1,0 +1,16 @@
+@use "../../style/mixins/colors.scss" as *;
+
+.select{
+    padding: 22px 17px;
+    background-color: $gray-color4;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 300;
+    color: $gray-color5;
+    opacity: 0.7;
+
+    &+&{
+        margin-top: 23px;
+    }
+}
