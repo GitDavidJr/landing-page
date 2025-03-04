@@ -44,10 +44,6 @@ O projeto está sendo desenvolvido com base na [playlist de aulas no YouTube](ht
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
 ---
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario)
+Desenvolvido por [David Inacio Ferreira da Silva Júnior](https://github.com/gitdavidjr)
