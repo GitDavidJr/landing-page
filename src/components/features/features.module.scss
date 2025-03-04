@@ -1,5 +1,7 @@
-@import "../../style/mixins/colors.scss";
-@import "../../style/mixins/padding.scss";
+@use "../../style/mixins/responsive.scss" as *;
+@use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .container {
     @include Padding;
@@ -10,28 +12,43 @@
     justify-content: center;
 
     h1 {
-        
-        font-size: 65;
+
+        @include SizeLarge;
         font-weight: bold;
     }
 
     p {
-        font-size: 30px;
+        @include SizeNormal;
         opacity: 0.7;
         margin-bottom: 8rem;
+
+        @include Phone {
+            margin-bottom: 2rem;
+        }
     }
 
     h1,
     p {
         text-align: center;
         width: 900px;
+
+        @include Phone {
+            width: 100%;
+        }
     }
+
+
 }
 
-.features{
+.features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 68px;
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 }
 
 .feature {
@@ -42,13 +59,13 @@
     border-radius: 5px;
 
     h1 {
+        @include SizeMedium;
         font-weight: bold;
-        font-size: 41px;
         color: $purple-color;
     }
 
     p {
-        font-size: 22px;
+        @include SizeSmall;
         color: $gray-color2;
     }
 
@@ -56,5 +73,11 @@
     p {
         text-align: left;
         width: auto;
+    }
+
+    @include Phone {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }

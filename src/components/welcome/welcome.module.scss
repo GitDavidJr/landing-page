@@ -20,14 +20,14 @@
 }
 
 .text {
-  
+
   h1 {
-    @include SizeTitle;
+    @include SizeExtra;
     font-weight: bold;
   }
 
   p {
-    @include SizeSubtitle;
+    @include SizeNormal;
     opacity: 0.7;
   }
 
@@ -36,20 +36,19 @@
   }
 }
 
-.image{
+.image {
   width: 100%;
   align-items: end;
   height: auto;
+
   @include Phone {
     grid-row: 1;
     padding: 0;
     margin: 0;
-    
+
   }
 }
 
-.divImage{
-  @include Phone {
-    
-  }
+.divImage {
+  @include Phone {}
 }

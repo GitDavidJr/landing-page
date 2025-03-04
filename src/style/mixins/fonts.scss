@@ -1,6 +1,6 @@
 @use "./responsive.scss" as *;
 
-@mixin SizeTitle{
+@mixin SizeExtra{
     font-size: 71px;
 
     @include Phone {
@@ -8,10 +8,34 @@
     }
 }
 
-@mixin SizeSubtitle{
+@mixin SizeLarge{
+    font-size: 65px;
+
+    @include Phone {
+        font-size: 32px;
+    }
+}
+
+@mixin SizeMedium{
+    font-size: 41px;
+
+    @include Phone {
+        font-size: 20px;
+    }
+}
+
+@mixin SizeNormal{
     font-size: 30px;
 
     @include Phone {
         font-size: 15px;
+    }
+}
+
+@mixin SizeSmall{
+    font-size: 22px;
+
+    @include Phone {
+        font-size: 11px;
     }
 }
