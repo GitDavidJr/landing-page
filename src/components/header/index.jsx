@@ -7,15 +7,15 @@ import Button from "../button/index.jsx";
 export const Header = () => {
     return (
         <div className={Styles.container}>
-            <div className="logo">
-                <Image src={Logo} alt="logo" />
+            <div >
+                <Image src={Logo} alt="logo" className={Styles.logo} />
             </div>
             <div className={Styles.menu}>
                 <Link href="/">home</Link>
                 <Link href="/">O que fazemos</Link>
                 <Link href="/">Cases</Link>
             </div>
-            <div className="action">
+            <div className={Styles.action}>
                 <Button title="Fale conosco" />
             </div>
         </div>

@@ -1,5 +1,6 @@
-@import "../../style/mixins/colors.scss";
-@import "../../style/mixins/padding.scss";
+@use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/responsive.scss" as *;
 
 .container {
   @include Padding; //mixins
@@ -12,6 +13,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include Phone {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .logo{
+    width: 100px;
+  }
 }
 
 .menu {
@@ -19,6 +29,18 @@
 
   a + a {
     margin-left: 39px;
+  }
+
+  @include Phone {
+    display: none;
+  }
+}
+
+.action{
+  text-align: end;
+
+  @include Phone {
+    display: none;
   }
 }
 

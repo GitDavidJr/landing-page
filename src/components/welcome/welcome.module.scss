@@ -1,5 +1,7 @@
-@import "../../style/mixins/colors.scss";
-@import "../../style/mixins/padding.scss";
+@use "../../style/mixins/responsive.scss" as *;
+@use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .container {
   @include Padding;
@@ -10,20 +12,44 @@
   background-size: cover; //rever
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @include Phone {
+    grid-template-columns: 1fr;
+  }
 }
 
 .text {
+  
   h1 {
+    @include SizeTitle;
     font-weight: bold;
-    font-size: 71px;
   }
 
   p {
-    font-size: 30px;
+    @include SizeSubtitle;
     opacity: 0.7;
+  }
+
+  @include Phone {
+    grid-row: 2;
   }
 }
 
 .image{
-    text-align: end;
+  width: 100%;
+  text-align: end;
+//rever daq pra baixo vou mimi, continuar daq minuto 27 aula 7
+  @include Phone {
+    grid-row: 1;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.divImage{
+  @include Phone {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
 }

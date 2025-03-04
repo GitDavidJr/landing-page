@@ -11,9 +11,9 @@ export default function Home() {
     <div className='styles.container'>
       <Header />
       <Welcome />
-      <Features />
-      <Contato />
-      <Footer />
+      {/* <Features /> */}
+      {/* <Contato /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

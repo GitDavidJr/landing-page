@@ -1,3 +1,9 @@
+@use "./responsive.scss" as *;
+
 @mixin Padding {
     padding: 0 11.25rem;
+
+    @include Phone {
+        padding: 0 1rem;
+    }
 }
