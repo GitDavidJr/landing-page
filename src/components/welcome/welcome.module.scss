@@ -15,6 +15,7 @@
 
   @include Phone {
     grid-template-columns: 1fr;
+    grid-template-rows: max-content;
   }
 }
 
@@ -37,19 +38,18 @@
 
 .image{
   width: 100%;
-  text-align: end;
-//rever daq pra baixo vou mimi, continuar daq minuto 27 aula 7
+  align-items: end;
+  height: auto;
   @include Phone {
     grid-row: 1;
     padding: 0;
     margin: 0;
+    
   }
 }
 
 .divImage{
   @include Phone {
-    align-items: center;
-    padding: 0;
-    margin: 0;
+    
   }
 }
