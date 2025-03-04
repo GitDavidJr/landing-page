@@ -3,6 +3,7 @@ import "../style/globals.scss";
 import Welcome from '@/components/welcome';
 import Features from '@/components/features';
 import Contato from '@/components/contato';
+import Footer from '@/components/footer';
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Welcome />
       <Features />
       <Contato />
+      <Footer />
     </div>
   );
 }
