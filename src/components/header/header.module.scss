@@ -1,6 +1,7 @@
 @use "../../style/mixins/colors.scss" as *;
 @use "../../style/mixins/padding.scss" as *;
 @use "../../style/mixins/responsive.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .container {
   @include Padding; //mixins
@@ -25,7 +26,7 @@
 }
 
 .menu {
-  font-size: 22px;
+  @include SizeSmall;
 
   a + a {
     margin-left: 39px;
