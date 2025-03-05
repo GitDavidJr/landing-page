@@ -31,9 +31,20 @@
     p {
         text-align: center;
         width: 900px;
+    }
 
-        @include Phone {
+    @include Phone {
+        padding-bottom: 100px;
+
+        p{
             width: 100%;
+        }
+
+        h1,
+        p {
+            @include Phone {
+                width: 100%;
+            }
         }
     }
 

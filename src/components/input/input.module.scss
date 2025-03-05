@@ -1,11 +1,14 @@
+@use "../../style/mixins/responsive.scss" as *;
 @use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .input{
+    @include SizeNormal;
     padding: 22px 17px;
     background-color: $gray-color4;
     border: none;
     border-radius: 10px;
-    font-size: 19px;
     font-weight: 300;
     color: $gray-color5;
     opacity: 0.7;

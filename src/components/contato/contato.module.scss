@@ -1,5 +1,7 @@
-@import "../../style/mixins/padding.scss";
-@import "../../style/mixins/colors.scss";
+@use "../../style/mixins/responsive.scss" as *;
+@use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .container {
     @include Padding();
@@ -7,27 +9,33 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 15px 3rem;
+    gap: 1rem 3rem;
     background-image: url("/images/fundo.svg");
     background-repeat: no-repeat;
     background-size: cover; //rever
     margin-bottom: 10rem;
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        gap: 0.5rem 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .texts{
     span{
-        font-size: 30px;
+        @include SizeNormal;
         font-weight: 600;
         color: $green-color2;
     }
 
     h1{
-        font-size: 65px;
+        @include SizeMedium;
         font-weight: bold;
     }
     
     p{
-        font-size: 30px;
+        @include SizeNormal;
         opacity: 0.7;
     }
 }
@@ -40,21 +48,31 @@
     border: 0.5px solid $gray-color3;
 
     h1{
+        @include SizeMedium;
         color: $purple-color;
-        font-size: 35px;
         font-weight: bold;
     }
 
     form{
         display: grid;
         gap: 23px;
+        
+    }
+
+    @include Phone{
+        padding: 1rem;
+        
+        form{
+            gap: 1rem;
+        }
+
     }
 }
 
 .footer {
+    @include SizeTiny;
     grid-column-start: 2;
     text-align: center;
-    font-size: 20px;
     padding: 0 6rem;
     line-height: 2.5rem;
     color: $gray-color;
@@ -62,5 +80,11 @@
     span{
         color: $white-color;
         cursor: pointer;
+    }
+
+    @include Phone{
+        grid-column-start: 1;
+        line-height: 1rem;
+        padding: 0 3rem;
     }
 }

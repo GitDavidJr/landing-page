@@ -1,5 +1,7 @@
-@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/responsive.scss" as *;
 @use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 
 .container{
@@ -8,6 +10,10 @@
     background-color: $purple-color2;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include Phone {
+        grid-template-columns: 1fr;
+    }
 
 
 }
@@ -23,24 +29,28 @@
     
 
     .title{
-        font-size: 29px;
+        @include SizeNormal;
         color: $white-color;
     }
 
     h1{
-        font-size: 24px;
+        @include SizeNormal;
         color: $green-color;
 
     }
 
     p{
-        font-size: 22px;
+        @include SizeSmall;
     }
 
     ul{
         list-style: none;
         padding: 0px;
         margin: 0px;
+
+        li{
+            @include SizeSmall;
+        }
     }
 
     .social{
@@ -57,7 +67,7 @@
     
     
         li {
-            font-size: 35px; // Tamanho dos ícones
+            @include SizeMedium;
                 
         }
     
@@ -66,13 +76,30 @@
     &.alignRight{
         text-align: right;
     }
+
+    @include Phone {
+        margin-top: 1rem;
+        
+        &.alignRight{
+            text-align: left;
+        }
+
+        p,h1{
+            margin: 0;
+        }
+    }
 }
 
 .allRightsReserved{
-    font-size: 20px;
+    @include SizeSmall;
     color: $gray-color;
     padding: 6rem 0 1rem;
     grid-column: span 4;
     text-align: center;
+
+    @include Phone {
+        grid-column: span 1;
+        padding: 3rem 0 0.5rem;
+    }   
 }
 

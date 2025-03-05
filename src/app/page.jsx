@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <Welcome />
       <Features />
-      {/* <Contato /> */}
-      {/* <Footer /> */}
+      <Contato />
+      <Footer />
     </div>
   );
 }

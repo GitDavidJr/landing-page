@@ -1,13 +1,15 @@
-@import "../../style/mixins/colors.scss";
+@use "../../style/mixins/responsive.scss" as *;
+@use "../../style/mixins/colors.scss" as *;
+@use "../../style/mixins/padding.scss" as *;
+@use "../../style/mixins/fonts.scss" as *;
 
 .button{
+    @include SizeSmall;
     padding: 15px 50px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 18px;
     cursor: pointer;
-
     &.primary{
         background-color: $green-color;
         color: $white-color;
@@ -19,7 +21,7 @@
     }
 
     &.full{
-        padding: 21px;
+        @include SizeNormal;
         width: 100%;
         font-size: 21px;
         font-weight: 600;

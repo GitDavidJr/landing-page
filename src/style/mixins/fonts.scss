@@ -20,7 +20,7 @@
     font-size: 41px;
 
     @include Phone {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -37,5 +37,13 @@
 
     @include Phone {
         font-size: 11px;
+    }
+}
+
+@mixin SizeTiny {
+    font-size: 20px;
+
+    @include Phone {
+        font-size: 10px;
     }
 }
