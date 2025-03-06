@@ -88,7 +88,7 @@ const Contato = () => {
       {failModal && <FailModel closeModal={closeModal}/>}
       {successModal && <SuccessModel closeModal={closeModal}/>}
       {isLoading && <Loading />}
-      <div className={Styles.container}>
+      <div className={Styles.container} id="contato">
         <div className={Styles.texts}>
           <span>ENTRE EM CONTATO</span>
           <h1>Aumente seu resultado de vendas e performance</h1>

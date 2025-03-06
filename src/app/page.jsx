@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <div className='styles.container'>
       <Head> {/* Correção */}
+        
         <script
           type="text/javascript"
           src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"

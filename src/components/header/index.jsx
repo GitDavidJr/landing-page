@@ -1,8 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/images/logo.svg";
 import Styles from "./header.module.scss";
 import Button from "../button/index.jsx";
+import {ScrollTo} from "../../utils/scrollTo";
 
 export const Header = () => {
     return (
@@ -16,7 +19,7 @@ export const Header = () => {
                 <Link href="/">Cases</Link>
             </div>
             <div className={Styles.action}>
-                <Button title="Fale conosco" />
+                <Button title="Fale conosco" onClick={() => ScrollTo("contato")} />
             </div>
         </div>
     );

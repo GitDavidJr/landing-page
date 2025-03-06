@@ -6,10 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
       <div className={Styles.container}>
         <div className={`${Styles.column} ${Styles.columnMain}`}>
           <Image src={Logo} alt="logo" />
