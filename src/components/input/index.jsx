@@ -1,17 +1,30 @@
-import "./input.module.scss"
 import Styles from "./input.module.scss";
 
-const Imput = ({ type, placeholder, pattern, required }) => {
+const Input = ({
+  type,
+  placeholder,
+  pattern,
+  required,
+  onBlur,
+  name,
+  id,
+  onChange,
+  value,
+}) => {
   return (
-    <input 
+    <input
+      id={id}
+      name={name}
       type={type}
       placeholder={placeholder}
       pattern={pattern}
-      required
+      required={required}
       className={Styles.input}
+      onBlur={onBlur}
+      onChange={onChange}
+      value={value}
     />
   );
 };
 
-
-export default Imput;
+export default Input;

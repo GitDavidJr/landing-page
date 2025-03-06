@@ -6,7 +6,6 @@ const roboto = Roboto({
     variable: '--font-roboto',
 });
 
-
 export default function Layout({ children }) {
     return (
       <html>
@@ -15,4 +14,4 @@ export default function Layout({ children }) {
         </body>
       </html>
     );
-  }
+}

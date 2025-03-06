@@ -1,8 +1,7 @@
 import Styles from "./footer.module.scss";
 import Logo from "../../../public/images/logo.svg";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
   return (
