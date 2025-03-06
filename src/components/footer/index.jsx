@@ -34,16 +34,16 @@ const Footer = () => {
           <h1>SOCIAL</h1>
           <ul className={Styles.social}>
             <li className={Styles.icon}>
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </li>
             <li className={Styles.icon}>
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </li>
             <li className={Styles.icon}>
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </li>
             <li className={Styles.icon}>
-              <i class="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-youtube"></i>
             </li>
           </ul>
         </div>
